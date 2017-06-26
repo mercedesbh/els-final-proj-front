@@ -4,12 +4,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title> Books Page </title>
     <link href="css/bootstrap.css" rel="stylesheet">
   </head>
 
   <body>
     <h1>Browse through our inventory of books!</h1>
+    <h3>“A reader lives a thousand lives before he dies, said Jojen. The man who never reads lives only one.”
+― George R.R. Martin, A Dance with Dragons</h3>
 
 
 
@@ -18,14 +22,14 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- <script src="js/bootstrap.min.js"></script>  -->
     <div class="container">
-    <div class="well well-sm">
+    <!-- <div class="well well-sm">
         <strong>Display</strong>
         <div class="btn-group">
             <a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
             </span>List</a> <a href="#" id="grid" class="btn btn-default btn-sm"><span
                 class="glyphicon glyphicon-th"></span>Grid</a>
         </div>
-    </div>
+    </div> -->
     <div id="products" class="row list-group">
         <div class="item  col-xs-4 col-lg-4">
             <div class="thumbnail">
@@ -42,7 +46,7 @@
                                 $21.00</p>
                         </div>
                         <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                            <a class="btn btn-success" href="shoppingcart.html">Add to cart</a>
                         </div>
                     </div>
                 </div>
@@ -63,7 +67,7 @@
                                 $21.00</p>
                         </div>
                         <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                            <a class="btn btn-success" href="shoppingcart.html">Add to cart</a>
                         </div>
                     </div>
                 </div>
@@ -84,7 +88,7 @@
                                 $21.00</p>
                         </div>
                         <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                            <a class="btn btn-success" href="shoppingcart.html">Add to cart</a>
                         </div>
                     </div>
                 </div>
@@ -105,7 +109,7 @@
                                 $21.00</p>
                         </div>
                         <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                            <a class="btn btn-success" href="shoppingcart.html">Add to cart</a>
                         </div>
                     </div>
                 </div>
@@ -126,7 +130,7 @@
                                 $21.00</p>
                         </div>
                         <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                            <a class="btn btn-success" href="shoppingcart.html">Add to cart</a>
                         </div>
                     </div>
                 </div>
@@ -147,7 +151,7 @@
                                 $21.00</p>
                         </div>
                         <div class="col-xs-12 col-md-6">
-                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                            <a class="btn btn-success" href="shoppingcart.html">Add to cart</a>
                         </div>
                     </div>
                 </div>
@@ -156,10 +160,17 @@
     </div>
 </div>
 
+<!-- <script>
+$('#list').click(function(event){
+  event.preventDefault();
+  console.dir("clicked this");
+  $('#products .item').addClass('list-group-item');
+  });
+$('#grid').click(function(event){event.preventDefault();
+$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');});
+</script> -->
 
-
-
-  </body>
+</body>
 
 
 </html>
