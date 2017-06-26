@@ -8,6 +8,16 @@
     <link href="css/bootstrap.css" rel="stylesheet">
   </head>
 
+  <header>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script>
+        $.get("nav.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+        });
+    </script>
+    <div id="nav-placeholder">
+  </header>
+
   <body>
     <h1>Hello, world!</h1>
 
